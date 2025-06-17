@@ -1,0 +1,91 @@
+.vcounter {
+                display: flex;
+                justify-content: space-between;
+                background: #333;
+                padding: 0 10px;
+                color: #fff;
+                height: 38px;
+                font-size: 14px
+            }
+            
+            @media only screen and (max-width: 576px) {
+                .vcounter {
+                    justify-content:normal;
+                    font-size: 13px;
+                    height: 35px
+                }
+            }
+            
+            .vcounter-vid {
+                color: #494949;
+                display: flex;
+                font-size: 14px
+            }
+            
+            @media only screen and (max-width: 576px) {
+                .vcounter-vid {
+                    font-size:13px
+                }
+            }
+            
+            .vcounter__l {
+                display: flex;
+                align-items: center
+            }
+            
+            .vcounter__l .icon {
+                margin-right: 5px
+            }
+            
+            .vcounter__r {
+                display: flex;
+                align-items: center
+            }
+            
+            .vcounter__r .icon {
+                margin-right: 5px
+            }
+            
+            .vcounter__live {
+                padding-left: 10px;
+                position: relative;
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid #fff
+            }
+            
+            .vcounter__live:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                margin-top: -3px;
+                top: 50%;
+                left: 0;
+                border-radius: 50%;
+                overflow: hidden;
+                animation: live 1s;
+                -moz-animation: live 1s infinite;
+                -webkit-animation: live 1s infinite;
+                background: #fcc43f
+            }
+            
+            @media only screen and (max-width: 576px) {
+                .vcounter__title {
+                    display:none
+                }
+            }
+            
+            @keyframes live {
+                0% {
+                    background: #fcc43f
+                }
+            
+                50% {
+                    background: #FF0000
+                }
+            
+                100% {
+                    background: #fcc43f
+                }
+            }
